@@ -6,6 +6,11 @@ const { errorHandler } = require('./middleware/errorMiddleware');
 const connectDB = require('./config/db');
 const port = process.env.PORT || 5000;
 const limit = require('express-limit').limit;
+
+
+const csrf = require('csurf');
+const csrfProtection = csrf();
+
 connectDB();
 
 const app = express();
@@ -20,7 +25,7 @@ app.use('/api/users', require('./routes/userRoutes'));
 if (process.env.NODE_ENV === 'dev') {
   app.use(express.static(path.join(__dirname, '../frontend/build')));
 
-  app.get('*', limit({
+  app.get('*', csrfProtection, limit({
     max:    5,        // 5 requests
     period: 60 * 1000 // per minute (60 seconds)
 }),(req, res) =>
@@ -29,7 +34,7 @@ if (process.env.NODE_ENV === 'dev') {
     )
   );
 } else {
-  app.get('/', limit({
+  app.get('/',csrfProtection,  limit({
     max:    5,        // 5 requests
     period: 60 * 1000 // per minute (60 seconds)
 }), (req, res) => res.send('Please set to dev'));
