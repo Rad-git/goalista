@@ -83,6 +83,10 @@ function Register() {
               placeholder='Enter your name'
               onChange={onChange}
             />
+            <input
+          type="hidden"
+          name="_csrf"
+          value="<%= csrfToken %>" />
           </div>
           <div className='form-group'>
             <input

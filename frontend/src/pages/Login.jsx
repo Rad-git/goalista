@@ -76,6 +76,10 @@ function Login() {
               placeholder='Enter your email'
               onChange={onChange}
             />
+            <input
+          type="hidden"
+          name="_csrf"
+          value="<%= csrfToken %>" />
           </div>
           <div className='form-group'>
             <input
