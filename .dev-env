@@ -1,0 +1,4 @@
+NODE_ENV = dev
+PORT = 5000
+MONGO_URI = "mongodb+srv://anotherRoot:anotherRoot@anotherhappycluster.itn0ld5.mongodb.net/?retryWrites=true&w=majority"
+JWT_SECRET = abc123
