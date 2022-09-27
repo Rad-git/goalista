@@ -19,9 +19,3 @@ npm install
 cd frontend
 npm start
 ```
-
-### Run Server
-
-```
-npm run server
-```
