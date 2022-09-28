@@ -16,7 +16,7 @@
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "csurf": "^1.11.0",
-    "dotenv": "^15.0.0",
+    "dotenv": "^15.0.1",
     "express": "^4.17.2",
     "express-async-handler": "^1.2.0",
     "express-limit": "^0.1.0",
