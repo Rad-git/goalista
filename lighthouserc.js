@@ -2,7 +2,7 @@ module.exports = {
     ci: {
       collect: {
         startServerCommand: 'npm run start',
-        url: ['https://goalista.herokuapp.com/'],
+        url: ['https://goalista.herokuapp.com'],
         numberOfRuns: 2,
         assert: {
             assertions: {
