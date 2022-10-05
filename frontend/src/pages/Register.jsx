@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
@@ -8,7 +9,7 @@ import Spinner from '../components/Spinner'
 
 
 const csrf = require('csurf');
-const csrfProtection = csrf();
+//const csrfProtection = csrf();
 
 
 function Register() {
