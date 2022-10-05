@@ -8,7 +8,7 @@ import { register, reset } from '../features/auth/authSlice'
 import Spinner from '../components/Spinner'
 
 
-const csrf = require('csurf');
+//const csrf = require('csurf');
 //const csrfProtection = csrf();
 
 
