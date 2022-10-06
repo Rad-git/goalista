@@ -31,6 +31,7 @@ jobs:
     - run: npm i
     - run: npm install react react-dom --save
     - run: npm install redux react-redux
+    - run: npm install --save react-toastify
     - run: npm install --save-dev react-app-rewired
     - run: npm install --save-dev crypto-browserify stream-browserify assert stream-http https-browserify os-browserify url buffer process
     - run: npm ci
