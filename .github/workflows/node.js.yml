@@ -50,4 +50,3 @@ jobs:
     - run: npm install --save-dev crypto-browserify stream-browserify assert stream-http https-browserify os-browserify url buffer process
     - run: npm ci
     - run: npm run build --prefix frontend
-    - run: npm test
