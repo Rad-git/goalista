@@ -33,6 +33,15 @@ jobs:
     - run: npm install redux react-redux
     - run: npm install --save react-toastify
     - run: npm install react-router-dom --save
+    - run: npm install react-icons --save
+    - run: npm install react-scripts --save
+    - run: npm install stream --save
+    - run: npm install webpack --save
+    - run: npm install react-app-polyfill --save
+    - run: npm install crypto-js --save
+    - run: npm install crypto --save
+    - run: npm install core-js --save
+    - run: npm install axios --save
     - run: npm install --save-dev react-app-rewired
     - run: npm install --save-dev crypto-browserify stream-browserify assert stream-http https-browserify os-browserify url buffer process
     - run: npm ci
