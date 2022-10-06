@@ -27,6 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install --save-dev react-app-rewired
+    - run: npm install react-dom react
     - run: npm install --save-dev crypto-browserify stream-browserify assert stream-http https-browserify os-browserify url buffer process
     - run: npm ci
     - run: npm run build --prefix frontend
