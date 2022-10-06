@@ -26,15 +26,15 @@ module.exports = {
           ],
           'categories:accessibility': [
             'error',
-            { minScore: 1, aggregationMethod: 'pessimistic' },
+            { minScore: 0.8, aggregationMethod: 'pessimistic' },
           ],
           'categories:best-practices': [
             'error',
-            { minScore: 1, aggregationMethod: 'pessimistic' },
+            { minScore: 0.8, aggregationMethod: 'pessimistic' },
           ],
           'categories:seo': [
             'error',
-            { minScore: 1, aggregationMethod: 'pessimistic' },
+            { minScore: 0.8, aggregationMethod: 'pessimistic' },
           ],
         },
       },
