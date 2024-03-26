@@ -20,7 +20,7 @@
     "colors": "^1.4.0",
     "csurf": "^1.11.0",
     "dotenv": "^16.0.3",
-    "express": "^4.18.1",
+    "express": "^4.19.2",
     "express-async-handler": "^1.2.0",
     "express-limit": "^0.1.0",
     "jsonwebtoken": "^8.5.1",
